@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-exercice1',
@@ -7,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exercice1Component implements OnInit {
   public result: number = 0;
+  miseAjourCompteur(event: { value: number }) {
+    this.result = event.value;
+  }
 
   constructor() {}
 
   ngOnInit() {}
+
+  public plus(){
+
+  }
 }
